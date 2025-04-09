@@ -47,48 +47,57 @@ Make sure you have [Node.js](https://nodejs.org/) installed (v14 or higher).
 2. **Create the file**  
    Inside the folder, create a file named server.js and paste this code:
 
-   import http from 'http';
+       import http from 'http';
 
-  const server = http.createServer((request, response) => {
-     console.log('headers', request.headers)
-     console.log('method', request.method)
-     console.log('url', request.url)
-     const user = {
-       name: 'Daniela',
-       hobby: 'Dancing',
-       location: 'Canada'
-    }
-
-
-   response.setHeader('content-type', 'application/json');
-   response.end(JSON.stringify(user));
-   });
-
-   server.listen(3000);
-
-
-3. **Create a file called package.json and add this;**
-       {
-    "type": "module"
+       const server = http.createServer((request, response) => {
+       console.log('headers', request.headers)
+       console.log('method', request.method)
+       console.log('url', request.url)
+   
+       const user = {
+          name: 'Daniela',
+          hobby: 'Dancing',
+          location: 'Canada'
        }
 
 
-4.  **Run the server**
-     node server.js
+       response.setHeader('content-type', 'application/json');
+       response.end(JSON.stringify(user));
+       });
+
+       server.listen(3000);
 
 
-5.  **Test it in your browser**
+4. **Create a file called package.json and add this;**
+
+        {
+         "type": "module"
+        }
+
+
+6.  **Run the server**
+
+         node server.js
+
+
+
+8.  **Test it in your browser**
     Open your browser and go to:
-    http://localhost:3000
+
+         http://localhost:3000
+
 
 
     You’ll see a JSON response:
-  {
-     "name": "Daniela",
-     "hobby": "Dancing",
-     "location": "Canada"
-  }
 
+         {
+            "name": "Daniela",
+            "hobby": "Dancing",
+            "location": "Canada"
+         }
+
+
+**Hurray you're done!!! try more than once**
 
     
   
