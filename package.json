@@ -1,0 +1,16 @@
+{
+  "name": "schoolable",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "Untitled-1.js",
+  "scripts": {
+    "start": "npx nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodeman": "^1.1.2"
+  }
+}
