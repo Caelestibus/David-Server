@@ -60,8 +60,8 @@ Make sure you have [Node.js](https://nodejs.org/) installed (v14 or higher).
     }
 
 
-    response.setHeader('content-type', 'application/json');
-    response.end(JSON.stringify(user));
+   response.setHeader('content-type', 'application/json');
+   response.end(JSON.stringify(user));
    });
 
    server.listen(3000);
